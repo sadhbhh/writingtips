@@ -2,30 +2,71 @@
 <html>
 <head>
 <style>
-body {
-    background-image: url("https://hdwallsource.com/img/2014/8/colorful-background-pictures-17219-17775-hd-wallpapers.jpg");
+
 }
 h1 {  
-    text-align: center;
-   color: #ffccff; 
-   font-size: 60px;
-   text-shadow: 3px 5px black;
+    h1,h2{
+  text-align:center;
+}
+h1{
+  color:rgba(100, 50, 255, .8);
+}
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 1s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 1s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+body{
+  background-image: url(http://fjordstudio.dk/assets/img/bg/diamonds.png);
+}
     }
     
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
-    
+    color:white;
    }
     
 h2 {
     font-family: Arial, Helvetica, sans-serif;
+    color:white;
     }
 </style>
 </head>
 <body>
 
-<h1>WritingTips</h1>
+<h1 class ="rainbow">WritingTips</h1>
     <h2>Don't Ramble</h2>
     <p>Rambling, using fluff words and adding unecessary details can make your work boring and less powerful. Try to use language that is concise and interesting.</p>
     
